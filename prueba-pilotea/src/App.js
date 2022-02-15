@@ -1,9 +1,10 @@
 import React from "react";
+import { HeaderOne } from "./components/HeaderOne";
 
 function App() {
   return (
-    <div className="text-center">
-      <h1>Vamos bien</h1>
+    <div className="container-fluid">
+      <HeaderOne />
     </div>
   );
 }
