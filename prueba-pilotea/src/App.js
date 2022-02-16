@@ -3,7 +3,8 @@ import { HeaderOne } from "./components/HeaderOne";
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid"
+    >
       <HeaderOne />
     </div>
   );

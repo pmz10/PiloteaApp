@@ -1,36 +1,105 @@
 import React from 'react'
 import { RecBtn } from './RecBtn'
+import Pillog from '../assets/Imagenes/branding-imagotipo-horizontal-full-color.svg'
 
 export const HeaderOne = () => {
   return (
-    <div className="container">
-        <nav className="nav-main">
-            <img src='../../../assets/EquipoFut.png'/>
-            <ul className="nav-menu show">
-                <li>
-                <a href="#">Inicio</a>
-                </li>
-                <li>
-                <a href="#">Autos</a>
-                </li>
-                <li>
-                <a href="#">Benefcios</a>
-                </li>
-                <li>
-                <a href="#">Contacto</a>
-                </li>
-                <li>
-                <a href="#">Iniciar sesión</a>
-                </li>
-                <li>
-                <RecBtn />
-                </li>
-                </ul>
-        </nav>
-        
-        <hr/>
-        
-    </div>    
+    <div 
+    style={myStyles.styleContainer}
+    >
+      <nav
+      style={myStyles.navmain}
+      >
+       <div style={{width:'100px', height:'20px'}}>
+         <img style={{marginLeft:'40px', marginTop:'13px'}}  src={Pillog}/>
+       </div>
+        <ul
+          style={{display:'flex', borderWidth:'5px', borderColor:'orange'}}
+        >
+          <li
+          style={myStyles.ul}
+          >
+            <a href="#"
+            style={myStyles.a}
+            >Inicio</a>
+          </li>
+          <li
+          style={myStyles.ul}
+          >
+            <a href="#"
+            style={myStyles.a}
+            >Autos</a>
+          </li>
+          <li
+          style={myStyles.ul}
+          >
+            <a href="#"
+            style={myStyles.a}
+            >Benefcios</a>
+          </li>
+          <li
+          style={myStyles.ul}
+          >
+            <a href="#"
+            style={myStyles.a}
+            >Contacto</a>
+          </li>
+          <div
+          style={myStyles.Path}
+          >
+
+          </div>
+          <li
+          style={myStyles.ul}
+          >
+            <a href="#"
+            style={myStyles.a}
+            >Iniciar sesión</a>
+          </li>
+          <li
+          style={myStyles.ul}
+          >
+            <RecBtn />
+          </li>
+        </ul>
+      </nav>
+    </div>
   )
 }
 
+let myStyles = {
+  styleContainer: {
+    width: '100%',
+    height: '70px',
+    //paddingBottom:'15px',
+    margin: 'auto',
+    //background: 'red'
+  },
+
+  navmain: {
+    fontSize: '17px',
+    display: 'flex',
+    justifyContent:'space-between',
+    alignItem: 'center',
+    height:'60px',
+    padding:'20',
+  },
+  
+  ul:{
+    listStyle:'none',
+    padding:'25px',
+  },
+  a:{
+    color: '#283a3e',
+    textDecoration:'none',
+  },
+  Path:{
+    width: '1px',
+    height: '70px',
+    border: 'solid 1px #e5e4e1',
+  }
+  
+}
+
+
+    
