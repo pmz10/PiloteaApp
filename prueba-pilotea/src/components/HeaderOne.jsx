@@ -57,9 +57,11 @@ export const HeaderOne = () => {
             >Iniciar sesión</a>
           </li>
           <li
-            style={myStyles.ul}
+            style={{ listStyle: 'none', padding: '16px'}}
           >
+           <div>
             <RecBtn />
+           </div>
           </li>
         </ul>
       </nav>

@@ -18,6 +18,6 @@ let myStyles ={
     height: "40px",
     font: "Brutalista",
     color: "#283a3e",
-    background: "#00eca1"
+    background: "#00eca1",
   }
 } 
