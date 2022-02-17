@@ -2,6 +2,8 @@ import React from 'react'
 import { BtnOne } from './BtnOne'
 import AutoImg from '../assets/Imagenes/bitmap@3x.webp'
 import { BoxBeneficios } from './BoxBeneficios'
+import { BtnLeft }  from './BtnLeft'
+import BtnRight, { BtnRigh } from './BtnRight'
 
 export const BannerOne = () => {
   return (
@@ -31,6 +33,12 @@ export const BannerOne = () => {
       </div>
       <div style={{position: 'absolute', top: '780px', left: '15%'}}>
         <BoxBeneficios />
+      </div>
+      <div style={{position:'absolute', left:'275px', top:'756px'}}>
+        <BtnLeft/>
+      </div>
+      <div style={{position:'absolute', right:'270px', top:'756px'}}>
+        <BtnRight />
       </div>
     </div>
   )

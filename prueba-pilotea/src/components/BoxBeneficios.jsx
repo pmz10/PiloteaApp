@@ -4,6 +4,7 @@ import SeguroP from '../assets/Imagenes/icons-medium-asurance.svg'
 import Alcancia from '../assets/Imagenes/icons-medium-gnv.svg'
 import Joya from '../assets/Imagenes/icons-medium-agency.svg'
 
+
 export const BoxBeneficios = () => {
     return (
         <div style={myStyles.beneficiosFooter}>
@@ -50,7 +51,7 @@ export const BoxBeneficios = () => {
                 <h5 style={myStyles.EncFour}>Mantenimiento preventivo</h5>
                 <p style={myStyles.DesFour}>Cada 5,000 km en talleres<br/>
                                             certificados.</p>
-            </div>
+            </div> 
         </div>
     )
 }
